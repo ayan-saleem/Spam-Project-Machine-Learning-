@@ -1,15 +1,15 @@
 """
 Spam Email Classifier
 ----------------------
-A simple but complete text-classification project using:
+A simple text-classification project using:
   - TF-IDF for turning email text into numeric features
-  - Multinomial Naive Bayes for classification (fast + great for text)
+  - Multinomial Naive Bayes for classification 
 
 Run:
-    python spam_classifier.py
+    python SpamClassifier.py
 
-Requirements:
-    pip install scikit-learn pandas --break-system-packages
+
+    
 """
 
 import pandas as pd
@@ -23,7 +23,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 # 1. DATA
 # ---------------------------------------------------------------------------
 # A small hand-crafted dataset so the script runs out of the box.
-# In a real project, swap this out for a CSV (e.g. the classic "SMS Spam
+# I will swap this out for a CSV (e.g. the classic "SMS Spam
 # Collection" dataset) using: df = pd.read_csv("spam.csv")
 def load_sample_data() -> pd.DataFrame:
     emails = [
